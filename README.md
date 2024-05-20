@@ -1,8 +1,7 @@
-# ros2_hardware_interface_rasberrypi
+# rpi_diff_drive
 
 ## Overview
-
-`ros2_gpio_control` is a ROS 2 package designed to interface with the GPIO pins of a Raspberry Pi 4. It provides a ros2_control hardware interface module for controlling GPIO pins, allowing users to read from and write to the GPIO pins using ROS 2.
+`rpi_diff_drive` is a ROS2 Hardware Interface for Raspberry Pi GPIO Control. This ROS2 package provides a ros2 control hardware interface for controlling motors connected to Raspberry Pi GPIO pins. It is specifically designed for use with the Differntial Drive robot platform. The package utilizes the pigpio library to handle GPIO control, PWM, and frequency settings.
 
 ## Features
 
