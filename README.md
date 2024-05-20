@@ -24,37 +24,31 @@
 1. **Install pigpio Library**:
    ```bash
    sudo apt-get install wiringpi
-Create a ROS 2 workspace if you don't already have one:
-
+   
+2. **Create a ROS 2 workspace if you don't already have one**:
    ```bash
-   Copy code
+   mkdir -p ~/ros2_ws/src
+   cd ~/ros2_ws/src
+   
+3. **Clone the package repository**:
+   ```bash
+   git clone https://github.com/your_username/ros2_gpio_control.git
+   
+4. **Navigate to the workspace directory and build the package**:
+   ```bash
+   cd ~/ros2_ws
+   colcon build
+   
+5. **Source the workspace**:
+   ```bash
+   source ~/ros2_ws/install/setup.bash
+   
+6. To run the GPIO control node:
+   ```bash
+   ros2 run ros2_gpio_control gpio_control_node
 
-mkdir -p ~/ros2_ws/src
-cd ~/ros2_ws/src
-Clone the package repository:
-
-bash
-Copy code
-git clone https://github.com/your_username/ros2_gpio_control.git
-Navigate to the workspace directory and build the package:
-
-bash
-Copy code
-cd ~/ros2_ws
-colcon build
-Source the workspace:
-
-bash
-Copy code
-source ~/ros2_ws/install/setup.bash
-Usage
-Running the Node
-To run the GPIO control node:
-bash
-Copy code
-ros2 run ros2_gpio_control gpio_control_node
-Configuring GPIO Pins
-You can configure which GPIO pins to control using a configuration file. By default, the package uses config/gpio_params.yaml.
+7. **Configuring GPIO Pins**:
+   You can configure which GPIO pins to control using a configuration file. By default, the package uses config/gpio_params.yaml.
 
 Example gpio_params.yaml:
 
