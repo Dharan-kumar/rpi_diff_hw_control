@@ -12,8 +12,8 @@
 
 ## Programming Languages Used
 
-- ![C++](https://img.shields.io/badge/C++-90%25-blue)
-- ![Python](https://img.shields.io/badge/Python-10%25-yellow)
+- ![C++](https://img.shields.io/badge/C++-95%25-blue)
+- ![Python](https://img.shields.io/badge/Python-5%25-yellow)
 
 ## Prerequisites
 
