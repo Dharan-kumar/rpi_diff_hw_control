@@ -109,8 +109,7 @@ This package uses the WiringPi library for GPIO control.
 Inspired by various open-source GPIO control projects for Raspberry Pi.
 markdown
 Copy code
-
-![image](https://github.com/Dharan-kumar/ros2_hardware_interface_rasberrypi/assets/84310855/420a5d23-5f7d-48f2-8c81-0ecddcaa300f)
+![Screenshot from 2024-03-05 14-59-53](https://github.com/Dharan-kumar/ros2_hardware_interface_rasberrypi/assets/84310855/989f51fd-1d69-4968-a017-56d342bb9eb7)
 
 ### Explanation of Sections
 
