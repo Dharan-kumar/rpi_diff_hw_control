@@ -93,14 +93,14 @@ gpio_pins:
 10. **Publish commands to control the GPIO pins (example for setting pin 17 high)**:
    ```bash
    ros2 topic pub /gpio/set_pin std_msgs/msg/Int32 "{data: 17}"
-
-Contributing
+```
+## Contributing
 Contributions are welcome! Please read our contributing guidelines before submitting a pull request.
 
-License
+## License
 This project is licensed under the MIT License.
 
-Acknowledgements
+## Acknowledgements
 This package uses the WiringPi library for GPIO control.
 Inspired by various open-source GPIO control projects for Raspberry Pi.
 markdown
