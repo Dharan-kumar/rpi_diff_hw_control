@@ -26,8 +26,9 @@
    sudo apt-get install wiringpi
 Create a ROS 2 workspace if you don't already have one:
 
-bash
-Copy code
+   ```bash
+   Copy code
+
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 Clone the package repository:
@@ -96,7 +97,6 @@ ros2 launch ros2_gpio_control gpio_control.launch.py params_file:=config/gpio_pa
 Publish commands to control the GPIO pins (example for setting pin 17 high):
 
 bash
-Copy code
 ros2 topic pub /gpio/set_pin std_msgs/msg/Int32 "{data: 17}"
 Contributing
 Contributions are welcome! Please read our contributing guidelines before submitting a pull request.
@@ -108,8 +108,6 @@ Acknowledgements
 This package uses the WiringPi library for GPIO control.
 Inspired by various open-source GPIO control projects for Raspberry Pi.
 markdown
-Copy code
-![Screenshot from 2024-03-05 14-59-53](https://github.com/Dharan-kumar/ros2_hardware_interface_rasberrypi/assets/84310855/989f51fd-1d69-4968-a017-56d342bb9eb7)
 
 ### Explanation of Sections
 
