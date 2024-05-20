@@ -110,6 +110,8 @@ Inspired by various open-source GPIO control projects for Raspberry Pi.
 markdown
 Copy code
 
+![image](https://github.com/Dharan-kumar/ros2_hardware_interface_rasberrypi/assets/84310855/420a5d23-5f7d-48f2-8c81-0ecddcaa300f)
+
 ### Explanation of Sections
 
 1. **Title and Badges**: Displays the name of the package and relevant badges for ROS 2 and Raspberry Pi.
