@@ -27,7 +27,7 @@
 
 1. **Clone the package repository**:
    ```bash
-   git clone https://github.com/your_username/ros2_gpio_control.git
+   https://github.com/Dharan-kumar/rpi_diff_drive.git
    
 2. **Create a ROS 2 workspace if you don't already have one**:
    ```bash
