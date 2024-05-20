@@ -46,7 +46,10 @@
    
 5. **To run the ros2_control hardware interface node**:
    ```bash
-   ros2 run rpi_diff_drive ros2_control.launch.py 
+   ros2 run rpi_diff_drive ros2_control.launch.py
+
+![Screenshot from 2024-04-02 16-52-32](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/0a02350f-e816-4350-8d7d-336fb596763b)
+
 
 ## Contributing
 Contributions are welcome! Please read our contributing guidelines before submitting a pull request.
