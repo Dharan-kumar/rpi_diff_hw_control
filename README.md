@@ -15,7 +15,7 @@
 
 - Raspberry Pi 4 with a compatible Linux OS.
 - ROS 2 Humble installed. Follow the [ROS 2 Humble installation guide](https://docs.ros.org/en/humble/Installation.html).
-- pigpio library installed.
+- pigpio library installed. Follow the [pigpio_if2 library installation guide](https://abyz.me.uk/rpi/pigpio/download.html).
 
 ## Installation
 
