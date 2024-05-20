@@ -13,15 +13,15 @@
 
 ## Prerequisites
 
-- Raspberry Pi 4 with a compatible Linux OS (e.g., Raspberry Pi OS).
-- ROS 2 Foxy installed. Follow the [ROS 2 Foxy installation guide](https://docs.ros.org/en/foxy/Installation.html).
+- Raspberry Pi 4 with a compatible Linux OS.
+- ROS 2 Humble installed. Follow the [ROS 2 Humble installation guide](https://docs.ros.org/en/humble/Installation.html).
 - pigpio library installed.
 
 ## Installation
 
 ### Setting Up the Raspberry Pi
 
-1. **Install WiringPi**:
+1. **Install pigpio Library**:
    ```bash
    sudo apt-get install wiringpi
 Create a ROS 2 workspace if you don't already have one:
