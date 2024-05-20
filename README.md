@@ -7,7 +7,7 @@
 ## Features
 
 - Control GPIO pins on a Raspberry Pi 4.
-- Read the state of GPIO pins.
+- Read the state of GPIO pins. 
 - Write high or low states to GPIO pins.
 - Integrates with the ROS 2 control framework.
 
