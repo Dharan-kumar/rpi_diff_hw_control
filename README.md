@@ -11,6 +11,11 @@
 - Write high or low states to GPIO pins.
 - Integrates with the ROS 2 control framework.
 
+## Programming Languages Used
+
+- ![Python](https://img.shields.io/badge/Python-60%25-blue)
+- ![C++](https://img.shields.io/badge/C++-40%25-green)
+
 ## Prerequisites
 
 - Raspberry Pi 4 with a compatible Linux OS.
