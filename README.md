@@ -2,7 +2,7 @@
 
 ## Overview
 
-`ros2_gpio_control` is a ROS 2 package designed to interface with the GPIO pins of a Raspberry Pi 4. It provides a hardware interface module for controlling GPIO pins, allowing users to read from and write to the GPIO pins using ROS 2.
+`ros2_gpio_control` is a ROS 2 package designed to interface with the GPIO pins of a Raspberry Pi 4. It provides a ros2_control hardware interface module for controlling GPIO pins, allowing users to read from and write to the GPIO pins using ROS 2.
 
 ## Features
 
