@@ -1,7 +1,0 @@
-<?xml version='1.0' ?>
-<launch>
-  <!-- Publish URDF file in robot_description topic -->
-  <include file="$(find-pkg-share rpi_diff_drive)/bringup/launch/urdf_visualize.launch.py"/>
-  <!-- Read robot_description and spawn in gazebo running sim -->
-  <include file="$(find-pkg-share rpi_diff_drive)/bringup/launch/spawn_robot_description.launch.py"/>
-</launch>

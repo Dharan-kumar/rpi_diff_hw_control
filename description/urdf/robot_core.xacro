@@ -19,22 +19,12 @@
         <color rgba="0 0 0 1"/>
     </material>
 
-
     <!-- BASE LINK -->
 
     <link name="base_link">
 
     </link>
-    
-    <link name="base_footprint">
 
-    </link>
-    <joint name="base_footprint_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="base_footprint"/>
-        <origin xyz="0 0 0"/>
-    </joint>
-    
 
     <!-- CHASSIS LINK -->
 
@@ -43,7 +33,6 @@
         <child link="chassis"/>
         <origin xyz="-0.1 0 0"/>
     </joint>
-
 
     <link name="chassis">
         <visual>
@@ -141,33 +130,6 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
         </xacro:inertial_sphere>
     </link>
-
     
-
-  <!-- Differential drive -->
-  <!-- <gazebo>
-    <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
-
-      
-        <left_joint>left_wheel_joint</left_joint>
-        <right_joint>right_wheel_joint</right_joint>
-        <wheel_separation>0.35</wheel_separation>
-        <wheel_diameter>0.1</wheel_diameter>
-
-
-        <max_wheel_torque>200</max_wheel_torque>
-        <max_wheel_acceleration>10.0</max_wheel_acceleration>
-
-
-        
-        <odometry_frame>odom</odometry_frame>
-        <robot_base_frame>base_link</robot_base_frame>
-
-        <publish_odom>true</publish_odom>
-        <publish_odom_tf>true</publish_odom_tf>
-        <publish_wheel_tf>true</publish_wheel_tf>
-
-    </plugin>
-  </gazebo> -->
     
 </robot>
