@@ -47,9 +47,11 @@
    ```bash
    ros2 run rpi_diff_drive ros2_control.launch.py
    
-![Screenshot from 2024-05-21 15-19-50](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/0a01fb6a-693d-49a4-94b6-dd06f90c7ece)
+![Screenshot from 2024-05-21 18-56-56](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/7c29b3df-66e0-4c8c-a068-248b95302687)
 
-![Screenshot from 2024-05-20 21-02-07](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/85b0e213-0cf5-457d-b292-f9477c1814a6)
+
+![Screenshot from 2024-05-21 18-57-58](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/1785a453-adb1-4e9d-9bf6-db16e42d564a)
+
 
 
 6. ## To teleop the robot launch teleop_twist_keyboard launch file and twist_to_twist_stamped.launch.py ** [ Converting geometry_msgs::msg::Twist to geometry_msgs::msg::TwistStamped ] **:
@@ -57,7 +59,8 @@
    ros2 run rpi_diff_drive twist_to_twist_stamped.launch.py
 
 
-[Screencast from 05-21-2024 03:43:45 PM.webm](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/d9e7cb13-b9ed-4b01-b746-3c3118fd6d9d)
+[Screencast from 05-21-2024 07:08:27 PM.webm](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/354be246-4298-4f0b-851f-991ae7f55989)
+
 
 ## Note
 Make Sure to check pigpio daemon is running when checking on the rasberrypi as shown in this link [pigpio library installation guide](https://abyz.me.uk/rpi/pigpio/download.html).
