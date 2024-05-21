@@ -16,6 +16,8 @@
 - ![Python](https://img.shields.io/badge/Python-5%25-yellow)
 
 ## Prerequisites
+[Screencast from 05-21-2024 03:14:45 PM.webm](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/c2d3e1c9-65ad-42cb-b2e0-79b613ad01a2)
+
 
 - Raspberry Pi 4 with a compatible Linux OS.
 - ROS 2 Humble installed. Follow the [ROS 2 Humble installation guide](https://docs.ros.org/en/humble/Installation.html).
