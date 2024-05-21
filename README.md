@@ -52,7 +52,7 @@
 
 
 ## Contributing
-Contributions are welcome! Please read our contributing guidelines before submitting a pull request.
+Contributions are welcome!
 
 ## License
 This project is licensed under the MIT License.
