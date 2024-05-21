@@ -52,7 +52,8 @@
 
 ![Screenshot from 2024-05-20 21-02-07](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/85b0e213-0cf5-457d-b292-f9477c1814a6)
 
-6. **To teleop the robot launch teleop_twist_keyboard launch file and twist_to_twist_stamped.launch.py  [ Converting geometry_msgs::msg::Twist to geometry_msgs::msg::TwistStamped ] **:
+
+6. ## To teleop the robot launch teleop_twist_keyboard launch file and twist_to_twist_stamped.launch.py ** [ Converting geometry_msgs::msg::Twist to geometry_msgs::msg::TwistStamped ] **:
    ```bash
    ros2 run rpi_diff_drive twist_to_twist_stamped.launch.py
 
