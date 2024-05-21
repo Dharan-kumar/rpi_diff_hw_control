@@ -16,9 +16,6 @@
 - ![Python](https://img.shields.io/badge/Python-5%25-yellow)
 
 ## Prerequisites
-[Screencast from 05-21-2024 03:14:45 PM.webm](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/c2d3e1c9-65ad-42cb-b2e0-79b613ad01a2)
-
-
 - Raspberry Pi 4 with a compatible Linux OS.
 - ROS 2 Humble installed. Follow the [ROS 2 Humble installation guide](https://docs.ros.org/en/humble/Installation.html).
 - pigpio library installed. Follow the [pigpio library installation guide](https://abyz.me.uk/rpi/pigpio/download.html).
@@ -58,6 +55,9 @@
 6. ## To teleop the robot launch teleop_twist_keyboard launch file and twist_to_twist_stamped.launch.py ** [ Converting geometry_msgs::msg::Twist to geometry_msgs::msg::TwistStamped ] **:
    ```bash
    ros2 run rpi_diff_drive twist_to_twist_stamped.launch.py
+
+
+[Screencast from 05-21-2024 03:43:45 PM.webm](https://github.com/Dharan-kumar/rpi_diff_drive/assets/84310855/d9e7cb13-b9ed-4b01-b746-3c3118fd6d9d)
 
 ## Note
 Make Sure to check pigpio daemon is running when checking on the rasberrypi as shown in this link [pigpio library installation guide](https://abyz.me.uk/rpi/pigpio/download.html).
