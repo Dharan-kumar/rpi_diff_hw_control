@@ -1,14 +1,15 @@
 # rpi_diff_drive
 
 ## Overview
-`rpi_diff_drive` is a ROS2 Hardware Interface for Raspberry Pi GPIO Control. This ROS2 package provides a ros2 control hardware interface for controlling motors connected to Raspberry Pi GPIO pins on Diffbot. It is specifically designed for use with the Differntial Drive robot platform. The package utilizes the pigpio library to handle GPIO control, PWM, and frequency settings.
+
+`rpi_diff_drive` is a Hardware Interface for Raspberry Pi GPIO Control. This ROS2 package provides a ros2_control hardware interface for controlling motors connected to Raspberry Pi GPIO pins on Robot here i'm using Diffbot. It is specifically designed for use with the Differntial Drive robot platform. The package utilizes the pigpio library to handle GPIO control, PWM, and frequency settings.
 
 ## Features
 
 - Control GPIO pins on a Raspberry Pi 4.
 - Read the state of GPIO pins. 
 - Write high or low states to GPIO pins.
-- Integrates with the ROS 2 control framework.
+- Integrates with the ROS2_Control framework.
 
 ## Programming Languages Used
 
@@ -16,24 +17,25 @@
 - ![Python](https://img.shields.io/badge/Python-5%25-yellow)
 
 ## Prerequisites
+
 - Raspberry Pi 4 with a compatible Linux OS.
 - ROS 2 Humble installed. Follow the [ROS 2 Humble installation guide](https://docs.ros.org/en/humble/Installation.html).
 - pigpio library installed. Follow the [pigpio library installation guide](https://abyz.me.uk/rpi/pigpio/download.html).
 
 ## Installation
 
-### Setting Up the Raspberry Pi
-
-1. **Clone the package repository**:
-   ```bash
-   https://github.com/Dharan-kumar/rpi_diff_drive.git
+### Setting Up the Environment
    
-2. **Create a ROS 2 workspace if you don't already have one**:
+1. **Create a ROS 2 workspace if you don't already have one**:
    ```bash
    mkdir -p ~/ros2_control_ws/src
    cd ~/ros2_control_ws/src
+
+2. **Clone the package repository**:
+   ```bash
+   https://github.com/Dharan-kumar/rpi_diff_drive.git
    
-3. **Navigate to the workspace directory and build the package**:
+3. **Navigate to the workspace directory and build the package also install the pigpio package as mentioned in prerequisites**:
    ```bash
    cd ~/ros2_control_ws
    colcon build --packages-select pigpio
@@ -54,7 +56,7 @@
 
 
 
-6. ## To teleop the robot launch teleop_twist_keyboard launch file and twist_to_twist_stamped.launch.py [ Converting geometry_msgs::msg::Twist to geometry_msgs::msg::TwistStamped ]:
+6. **To teleop the robot run the teleop_twist_keyboard node and twist_to_twist_stamped.launch.py launch file [ Converting geometry_msgs::msg::Twist to geometry_msgs::msg::TwistStamped ]**
    ```bash
    ros2 run rpi_diff_drive twist_to_twist_stamped.launch.py
 
@@ -63,24 +65,14 @@
 
 
 ## Note
-Make Sure to check pigpio daemon is running when checking on the rasberrypi as shown in this link [pigpio library installation guide](https://abyz.me.uk/rpi/pigpio/download.html).
+1. Make Sure to check pigpio daemon is running when checking with rasberrypi as shown in this link [pigpio library installation guide](https://abyz.me.uk/rpi/pigpio/download.html).
+2. For the simulation without hardware (Rasberry Pi) no need to run pigpio daemon.
 
 ## Contributing
 Contributions are welcome!
 
-## License
-This project is licensed under the MIT License.
-
 ## Acknowledgements
-This package uses the Pigpio library for GPIO control.
-Inspired by various open-source GPIO control projects for Raspberry Pi.
+This package uses the Pigpio library for GPIO control of Rasberry Pi.
+Inspired by various open-source GPIO control projects for Raspberry Pi and also arduio_diff_drive package for ros2_control hardware interface implementation.
 
-I hope this README should provide clear and comprehensive instructions for users to understand, install, and use your ROS 2 GPIO control package for the Raspberry Pi 4.
-
-
-
-
-
-
-
-   
+I hope this README should provide clear and comprehensive instructions for users to understand, install, and use my **rpi_diff_drive** package for ros2_control hardware implementation on Raspberry Pi.
