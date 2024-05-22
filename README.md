@@ -33,7 +33,7 @@
 
 2. **Clone the package repository**:
    ```bash
-   https://github.com/Dharan-kumar/rpi_diff_drive.git
+   git clone https://github.com/Dharan-kumar/rpi_diff_drive.git
    
 3. **Navigate to the workspace directory and build the package also install the pigpio package as mentioned in prerequisites**:
    ```bash
@@ -73,6 +73,6 @@ Contributions are welcome!
 
 ## Acknowledgements
 This package uses the Pigpio library for GPIO control of Rasberry Pi.
-Inspired by various open-source GPIO control projects for Raspberry Pi and also arduio_diff_drive package for ros2_control hardware interface implementation.
+Inspired by various open-source GPIO control projects for Raspberry Pi and also diffdrive_arduino package for ros2_control hardware interface implementation.
 
 I hope this README should provide clear and comprehensive instructions for users to understand, install, and use my **rpi_diff_drive** package for ros2_control hardware implementation on Raspberry Pi.
