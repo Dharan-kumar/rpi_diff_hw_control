@@ -130,7 +130,6 @@ namespace rpi_diff_drive
             state_interfaces.emplace_back(hardware_interface::StateInterface(
             info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &hw_velocities_[i]));
         }
-
         return state_interfaces;
     }
 
@@ -146,7 +145,6 @@ namespace rpi_diff_drive
             command_interfaces.emplace_back(hardware_interface::CommandInterface(
             info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &hw_commands_[i]));
         }
-
         return command_interfaces;
     }
 
@@ -169,9 +167,6 @@ namespace rpi_diff_drive
         else
         {
             RCLCPP_ERROR(rclcpp::get_logger("RpiController"), "Not activated!");
-
-            //return hardware_interface::CallbackReturn::SUCCESS; //need to change
-
             return hardware_interface::CallbackReturn::ERROR; 
         }   
     }
@@ -189,15 +184,11 @@ namespace rpi_diff_drive
         if(coonection_status)
         {
             RCLCPP_INFO(rclcpp::get_logger("RpiController"), "Successfully Deactivated!");
-
             return hardware_interface::CallbackReturn::SUCCESS;
         }
         else
         {
             RCLCPP_ERROR(rclcpp::get_logger("RpiController"), "Not Deactivated!");
-
-            //return hardware_interface::CallbackReturn::SUCCESS;// Need to change
-
             return hardware_interface::CallbackReturn::ERROR;
         }
     }
@@ -317,10 +308,8 @@ namespace rpi_diff_drive
         {
             m_rpiDriveObj.stop(); // Stop method
         }
-
         return hardware_interface::return_type::OK;
     }   
-
 }
 
 #include "pluginlib/class_list_macros.hpp"
