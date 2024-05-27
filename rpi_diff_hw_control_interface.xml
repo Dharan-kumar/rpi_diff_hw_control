@@ -1,0 +1,9 @@
+<library path="rpi_diff_hw_control">
+  <class name="rpi_diff_hw_control/RpiController"
+         type="rpi_diff_hw_control::RpiController"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      ros2_control hardware interface.
+    </description>
+  </class>
+</library>
