@@ -2,12 +2,12 @@
  * @author: Dharan Kumar Nallagatla 
 */
 
-#include "rpi_diff_drive/rpi_ros2_control.hpp"
+#include "rpi_diff_hw_control/rpi_ros2_control.hpp"
 
 /**
  * @brief: Namespace
 */
-namespace rpi_diff_drive
+namespace rpi_diff_hw_control
 {
     /**
      * @brief: RpiController Constructor
@@ -130,6 +130,7 @@ namespace rpi_diff_drive
             state_interfaces.emplace_back(hardware_interface::StateInterface(
             info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &hw_velocities_[i]));
         }
+
         return state_interfaces;
     }
 
@@ -145,6 +146,7 @@ namespace rpi_diff_drive
             command_interfaces.emplace_back(hardware_interface::CommandInterface(
             info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &hw_commands_[i]));
         }
+
         return command_interfaces;
     }
 
@@ -167,6 +169,7 @@ namespace rpi_diff_drive
         else
         {
             RCLCPP_ERROR(rclcpp::get_logger("RpiController"), "Not activated!");
+
             return hardware_interface::CallbackReturn::ERROR; 
         }   
     }
@@ -184,11 +187,13 @@ namespace rpi_diff_drive
         if(coonection_status)
         {
             RCLCPP_INFO(rclcpp::get_logger("RpiController"), "Successfully Deactivated!");
+
             return hardware_interface::CallbackReturn::SUCCESS;
         }
         else
         {
             RCLCPP_ERROR(rclcpp::get_logger("RpiController"), "Not Deactivated!");
+
             return hardware_interface::CallbackReturn::ERROR;
         }
     }
@@ -199,6 +204,7 @@ namespace rpi_diff_drive
     hardware_interface::return_type RpiController::read(const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
     {
         RCLCPP_WARN(logger_,"Rpi Read Is Triggred");
+        
         // Finding the position and velocity    
         int leftEncoderCounts = m_rpiDriveObj.readEncoders("left");
         int rightEncoderCounts = m_rpiDriveObj.readEncoders("right");
@@ -308,13 +314,15 @@ namespace rpi_diff_drive
         {
             m_rpiDriveObj.stop(); // Stop method
         }
+
         return hardware_interface::return_type::OK;
     }   
+
 }
 
 #include "pluginlib/class_list_macros.hpp"
 
-PLUGINLIB_EXPORT_CLASS(rpi_diff_drive::RpiController, hardware_interface::SystemInterface)
+PLUGINLIB_EXPORT_CLASS(rpi_diff_hw_control::RpiController, hardware_interface::SystemInterface)
 
 
         

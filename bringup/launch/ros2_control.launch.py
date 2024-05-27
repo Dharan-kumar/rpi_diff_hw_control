@@ -14,7 +14,7 @@ def generate_launch_description():
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
             PathJoinSubstitution(
-                [FindPackageShare("rpi_diff_drive"), "urdf", "robot.urdf.xacro"]
+                [FindPackageShare("rpi_diff_hw_control"), "urdf", "robot.urdf.xacro"]
             ),
         ]
     )
@@ -22,13 +22,13 @@ def generate_launch_description():
 
     robot_controllers = PathJoinSubstitution(
         [
-            FindPackageShare("rpi_diff_drive"),
+            FindPackageShare("rpi_diff_hw_control"),
             "config",
             "my_controllers.yaml",
         ]
     )
     rviz_config_file = PathJoinSubstitution(
-        [FindPackageShare("rpi_diff_drive"), "rviz", "diffbot.rviz"]
+        [FindPackageShare("rpi_diff_hw_control"), "rviz", "diffbot.rviz"]
     )
 
     joint_state_publisher = Node(

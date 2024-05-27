@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>rpi_diff_drive</name>
+  <name>rpi_diff_hw_control</name>
   <version>0.0.0</version>
-  <description>Demo package of `ros2_control` hardware for DiffBot.</description>
+  <description>`ros2_control` hardware interface for RasberryPi DiffBot.</description>
 
   <maintainer email="dharankumarnallagatla@gmail.com">Dharan Kumar Nallagatla</maintainer>
   

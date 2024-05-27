@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(rpi_diff_drive LANGUAGES CXX)
+project(rpi_diff_hw_control LANGUAGES CXX)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
   add_compile_options(-Wall -Wextra)
@@ -37,25 +37,25 @@ install(TARGETS
 
 # Create library
 add_library(
-  rpi_diff_drive
+  rpi_diff_hw_control
   SHARED
   hardware/rpi_ros2_control.cpp
 )
-target_compile_features(rpi_diff_drive PUBLIC cxx_std_17)
-target_include_directories(rpi_diff_drive PUBLIC
+target_compile_features(rpi_diff_hw_control PUBLIC cxx_std_17)
+target_include_directories(rpi_diff_hw_control PUBLIC
   $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/hardware/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
 )
 ament_target_dependencies(
-  rpi_diff_drive PUBLIC
+  rpi_diff_hw_control PUBLIC
   ${THIS_PACKAGE_INCLUDE_DEPENDS}
 )
 
 # Link pigpiod_if2 and pigpio libraries
-target_link_libraries(rpi_diff_drive PUBLIC pigpiod_if2)
+target_link_libraries(rpi_diff_hw_control PUBLIC pigpiod_if2)
 
 # Export hardware plugins
-pluginlib_export_plugin_description_file(hardware_interface rpi_diff_drive_interface.xml)
+pluginlib_export_plugin_description_file(hardware_interface rpi_diff_hw_control_interface.xml)
 
 # Install header files
 install(
@@ -74,7 +74,7 @@ install(
 )
 
 # Install library
-install(TARGETS rpi_diff_drive
+install(TARGETS rpi_diff_hw_control
   EXPORT export_${PROJECT_NAME}
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
